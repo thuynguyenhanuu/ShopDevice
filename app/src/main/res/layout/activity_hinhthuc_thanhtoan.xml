@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HinhthucThanhtoanActivity"
+    android:weightSum="10">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarhinhthucvc"
+        app:title="Vận chuyển và thanh toán"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#E04B41">
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hình thức vận chuyển"
+            android:textColor="#f000"
+            android:textSize="20sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/radiovanchuyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="12dp">
+
+            <RadioButton
+                android:id="@+id/radioVCthuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/standard"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioVCnhanh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GHN" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hình thức thanh toán"
+            android:textColor="#f000"
+            android:textSize="20sp"
+            android:layout_marginLeft="30sp"/>
+
+        <RadioGroup
+            android:id="@+id/radiothanhtoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="12dp">
+
+            <RadioButton
+                android:id="@+id/radioTienmat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tien_mat"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioATMquocte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/atm_qt"
+                />
+
+            <RadioButton
+                android:id="@+id/radioATMnoidia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/atm_noidia" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonTieptuc"
+        android:layout_width="298dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="90dp"
+        android:background="#EC4A4A"
+        android:text="Tiếp tục"
+        android:textColor="#FCFAFA" />
+
+
+</LinearLayout>

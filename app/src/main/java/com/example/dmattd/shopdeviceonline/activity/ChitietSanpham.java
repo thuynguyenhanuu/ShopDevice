@@ -115,7 +115,7 @@ public class ChitietSanpham extends AppCompatActivity {
 
     private void GetNhanxet() {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.Duongdanngetnhanxet, new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, Server.Duongdanngetnhanxet+CheckStatusUser.idsanpham, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 if(response != null){

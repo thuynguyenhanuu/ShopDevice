@@ -63,7 +63,7 @@ public class DangkyActivity extends AppCompatActivity {
 
                 if(ten.length() >0 && sdt.length() > 0 && diachi.length() >0 && matkhau.length() >0 && xacnhanmatkhau.length() >0){
                     final RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-                    StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.nguoidung, new Response.Listener<String>() {
+                    StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.Duongdandangky, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             if(response.equals("isExisted")){

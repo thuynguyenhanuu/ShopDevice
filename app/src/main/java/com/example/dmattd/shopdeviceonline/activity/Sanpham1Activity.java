@@ -117,8 +117,10 @@ public class Sanpham1Activity extends AppCompatActivity {
 
     private void Getdata(int Page) {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        String duongdan = Server.Duongdansp1+String.valueOf(Page);
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, duongdan, new Response.Listener<String>() {
+        //String duongdan = Server.Duongdansp1+String.valueOf(Page);
+        String duongdan = Server.Duongdansp1+String.valueOf(idloaisp1);
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, duongdan, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 int id = 0;
